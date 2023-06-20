@@ -17,4 +17,4 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           push: true
-          tags: imbytecat/${{ basename github.repository }}:latest
+          tags: imbytecat/${{ github.event.repository.name }}:latest
